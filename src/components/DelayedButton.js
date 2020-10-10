@@ -2,8 +2,12 @@
 class DelayedButton extends React.Component {
 
   handleClick = event => {
-    this.props.onReceiveCoordinates([event.clientX, event.clientY]);
-  };
+    handleClick = event => {
+      event.persist();
+      setTimeout(() => {
+        this.props.onDelayedClick(event);
+      }, this.props.delay);
+    };
 
   render() {
     return (
