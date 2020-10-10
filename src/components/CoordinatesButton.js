@@ -7,7 +7,7 @@ class CoordinatesButton extends React.Component {
 
   render() {
     return (
-      <button onClick={this.tickle}>Tickle me!</button>
+      <button onClick={this.handleClick}>Coordinates</button>
     );
   }
 }
