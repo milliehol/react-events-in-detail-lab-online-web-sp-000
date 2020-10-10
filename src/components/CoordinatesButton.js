@@ -1,9 +1,9 @@
 // Code CoordinatesButton Component Here
 class CoordinatesButton extends React.Component {
 
-  tickle = () => {
-    console.log('Tee hee!');
-  }
+  handleClick = event => {
+    this.props.onReceiveCoordinates([event.clientX, event.clientY]);
+  };
 
   render() {
     return (
