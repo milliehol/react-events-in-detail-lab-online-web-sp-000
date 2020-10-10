@@ -12,4 +12,4 @@ class DelayedButton extends React.Component {
   }
 }
 
-export default CoordinatesButton;
+export default DelayedButton;
