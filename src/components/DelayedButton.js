@@ -11,7 +11,7 @@ class DelayedButton extends React.Component {
 
   render() {
     return (
-      <button onClick={this.handleClick}>Coordinates</button>
+      <button onClick={this.handleClick}>Delay</button>
     );
   }
 }
